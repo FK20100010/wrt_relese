@@ -17,6 +17,7 @@ echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main"
 #添加自定义插件
 git clone -b 18.06 --single-branch https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 git clone https://github.com/papagaye744/luci-theme-design.git  package/luci-theme-design
+git clone https://github.com/kiddin9/openwrt-clouddrive2.git  package/openwrt-clouddrive2
 
 rm -rf feeds/packages/net/chinadns-ng
 cp -rf feeds/passwall_packages/chinadns-ng/ feeds/packages/net/
