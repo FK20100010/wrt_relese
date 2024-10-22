@@ -71,11 +71,10 @@ jobs:
       run: |
         chmod +x ./jdc-lede.sh
         ./jdc-lede.sh
-        
-    - name: Upload Firmware
-      run: |
         cd openwrt/bin/targets/*/*
         rm -rf packages
+        
+    - name: Upload Firmware
       uses: actions/upload-artifact@v4
       with:
         name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.BUILD_DATE }}
