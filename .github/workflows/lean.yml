@@ -71,6 +71,9 @@ jobs:
       run: jdc-lede.sh
 
     - name: Upload Firmware
+      run: |
+        cd openwrt/bin/targets/*/*
+        rm -rf packages
       uses: actions/upload-artifact@v4
       with:
         name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.BUILD_DATE }}
