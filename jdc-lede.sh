@@ -38,8 +38,8 @@ sed -i 's/disabled=1/disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac802
 sed -i "s/'UTC'/'CST-8'\n        set system.@system[-1].zonename='Asia\/Shanghai'/g" package/base-files/files/bin/config_generate
 mv -f ../jdc-lede1 .config
 
-make defconfig
-make download -j8
-find dl -size -1024c -exec ls -l {} \;
-find dl -size -1024c -exec rm -f {} \;
-make -j$(nproc) V=s
+#make defconfig
+#make download -j8
+#find dl -size -1024c -exec ls -l {} \;
+#find dl -size -1024c -exec rm -f {} \;
+#make -j$(nproc) V=s
