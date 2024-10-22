@@ -68,8 +68,10 @@ jobs:
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         
     - name: Build Firmware
-      run: jdc-lede.sh
-
+      run: |
+        chmod +x ./jdc-lede.sh
+        ./jdc-lede.sh
+        
     - name: Upload Firmware
       run: |
         cd openwrt/bin/targets/*/*
