@@ -36,7 +36,7 @@ sed -i 's/disabled=1/disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac802
 
 #修改时区
 sed -i "s/'UTC'/'CST-8'\n        set system.@system[-1].zonename='Asia\/Shanghai'/g" package/base-files/files/bin/config_generate
-mv -f ../jdc-lede.config .config
+mv -f ../jdc-lede1 .config
 
 make defconfig
 make download -j8
