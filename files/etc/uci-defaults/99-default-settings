@@ -66,8 +66,6 @@ sed -i 's~root:::0:99999:7:::~root:$5$wWuQ48EcwP8fJ2Xq$GGvJHda1R2bYVNWbsG4lGS/Yn
 
 sed -i '/check_signature/d' /etc/opkg.conf
 
-sed -i '/REDIRECT --to-ports 53/d' /etc/firewall.user
-
 sed -i '/option disabled/d' /etc/config/wireless
 sed -i '/set wireless.radio${devidx}.disabled/d' /lib/wifi/mac80211.sh
 
