@@ -61,7 +61,6 @@ uci commit network
 sed -i 's/services/nas/g'  /usr/share/luci/menu.d/luci-app-samba4.json
 sed -i '/passwall/d' /etc/opkg/distfeeds.conf
 
-sed -i 's#downloads.openwrt.org#mirrors.tencent.com/lede#g' /etc/opkg/distfeeds.conf
 sed -i 's~root::0:0:99999:7:::~root:$5$wWuQ48EcwP8fJ2Xq$GGvJHda1R2bYVNWbsG4lGS/Yn/kUxWDDLfYac9p9PI.:20019:0:99999:7:::~g' /etc/shadow
 sed -i 's~root:::0:99999:7:::~root:$5$wWuQ48EcwP8fJ2Xq$GGvJHda1R2bYVNWbsG4lGS/Yn/kUxWDDLfYac9p9PI.:20019:0:99999:7:::~g' /etc/shadow
 
