@@ -1,6 +1,6 @@
 git clone -b main --single-branch https://github.com/VIKINGYFY/immortalwrt.git openwrt
 [ -e files ] && mv files openwrt/files
-chmod 755 openwrt/files/*/*/*
+chmod 775 openwrt/files/*/*/*
 cd openwrt
 
 #sed -i '$a src-git other https://github.com/Lienol/openwrt-package.git;other' feeds.conf.default
