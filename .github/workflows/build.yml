@@ -28,10 +28,10 @@ on:
       ssh:
         description: 'SSH connection to Actions'
         required: false
-        default: 'false'
+        default:  false
         options:
           - false
-          - true       
+          - true
 
 jobs:          
 
