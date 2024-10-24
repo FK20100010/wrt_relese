@@ -2,13 +2,8 @@ name: Build WRT
 run-name: Build - ${{ inputs.model }}
 
 on:
-  repository_dispatch:
   workflow_dispatch:
     inputs:
-      ssh:
-        description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
       model:
         required: true
         description: Device Model
