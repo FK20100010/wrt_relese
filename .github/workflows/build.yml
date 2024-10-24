@@ -26,8 +26,8 @@ on:
           - ubuntu-22.04
           - ubuntu-latest
       ssh:
+        required: false
         description: 'SSH connection to Actions'
-        required: 'false'
         default:  'false'
 jobs:          
 
