@@ -28,11 +28,11 @@ on:
       ssh:
         description: 'SSH connection to Actions'
         type: choice
-        required: 'false'
-        default:  'false'
+        required: false
+        default:  false
         options:
-          - 'false'
-          - 'true'
+          - false
+          - true
 
 jobs:          
 
