@@ -100,12 +100,7 @@ jobs:
 
     - name: Build Firmware
       run: |
-        git clone https://github.com/ZqinKing/wrt_relese.git
-        mv vikingyfy.jdc wrt_relese/deconfig/jdc_ax1800pro-ax6600_libwrt.config
-        mv vikingyfy.jdc wrt_relese/deconfig/jdc_ax1800pro-ax6600_immwrt.config
-        mv vikingyfy.jdc wrt_relese/deconfig/jdc_ax1800pro-ax6600_libwrt.config
-        mv files/etc/uci-defaults/99-default-settings wrt_relese/patches/992_set-wifi-uci.sh
-        cd wrt_relese
+        ./build.sh
         ./build.sh ${{ inputs.model }}
 
     - name: Upload Firmware
