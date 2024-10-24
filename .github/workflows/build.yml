@@ -2,6 +2,7 @@ name: Build WRT
 run-name: Build - ${{ inputs.model }}
 
 on:
+  repository_dispatch:
   workflow_dispatch:
     inputs:
       ssh:
