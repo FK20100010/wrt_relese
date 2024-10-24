@@ -4,6 +4,10 @@ run-name: Build - ${{ inputs.model }}
 on:
   workflow_dispatch:
     inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
       model:
         required: true
         description: Device Model
@@ -25,10 +29,6 @@ on:
           - ubuntu-20.04
           - ubuntu-22.04
           - ubuntu-latest
-      ssh:
-        required: false
-        description: 'SSH connection to Actions'
-        default:  'false'
 jobs:          
 
 env:
