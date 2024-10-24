@@ -27,11 +27,12 @@ on:
           - ubuntu-latest
       ssh:
         description: 'SSH connection to Actions'
-        required: false
-        default:  false
+        type: choice
+        required: 'false'
+        default:  'false'
         options:
-          - false
-          - true
+          - 'false'
+          - 'true'
 
 jobs:          
 
