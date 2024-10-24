@@ -29,7 +29,7 @@ on:
         description: 'SSH connection to Actions'
         type: choice
         required: false
-        default:  false
+        default:  'false'
         options:
           - false
           - true
