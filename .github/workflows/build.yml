@@ -107,4 +107,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: ${{ env.BUILD_DATE }}_${{ inputs.model }}
-        path: wrt_relese/firmware/*.*
+        path: ./firmware/*.*
